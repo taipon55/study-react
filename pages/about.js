@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { Footer } from "../components/Footer";
 import Link from "next/link";
 import Links from "../components/Links";
+import Headline from "../components/Headline";
 
 export default function Home() {
   return (
@@ -15,12 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>About Page</h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/about.js</code>
-        </p>
+        <Headline page="about" />
         <Links />
       </main>
 
